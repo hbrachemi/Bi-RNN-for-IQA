@@ -8,10 +8,10 @@ The source code is available in the notebook.
 1. Install dependencies, import required libraries and download required datasests.
 2. Create an instance of the data generator as follows:
  ```python 
- training_generator = DataGenerator(list_IDs_path='./IDs.pickle',overlapping=0,labels_path='./scores.pickle',
+ training_generator = DataGenerator(list_IDs_path='./IDs.pickle',overlapping=0,
                      db_path='./Koniq/512x384/',batch_size=1,dim=(224,224), n_channels=3,
                      n_output=1, shuffle=False, part='train',base='resnet')
- val_generator = DataGenerator(list_IDs_path='./IDs.pickle',overlapping=0,labels_path='./scores.pickle',
+ val_generator = DataGenerator(list_IDs_path='./IDs.pickle',overlapping=0,
                      db_path='./Koniq/512x384/',batch_size=1,dim=(224,224), n_channels=3,
                      n_output=1, shuffle=False, part='test',base='resnet')
 ```
@@ -26,4 +26,5 @@ Then build the feature extractor model.
  X_test = model_cnn.predict_generator(generator=val_generator)
 ```
 5. Define the RNN model
-6. Train the model
+6. Load y and train the model on the train set.
+
