@@ -20,6 +20,7 @@ The source code is available in the notebook.
  base_model =  Base_Model('resnet',weights='imagenet', include_top=False, input_shape=(224, 224, 3))     
 ```
 Then build the feature extractor model.
+
 4. Extract the features using the predict function:
 ```python
  X_train = model_cnn.predict_generator(generator=training_generator)
