@@ -1,4 +1,18 @@
-### On the Use of Bi-RNN for Image Quality Assessment
+# On the Use of Bi-RNN for Image Quality Assessment
+
+## Contents
+1. [Abstract](#Abstract)
+2. [Performance Benchmark](#Performance-Benchmark)
+
+    2.1. [Scores comparison on authentic distortions' databases](#Scores-comparison-on-authentic-distortions'-databases)
+   
+    2.2. [Scores comparison on synthethic distortions' databases](#Scores-comparison-on-synthethic-distortions'-databases)
+   
+3. [Usage](#Usage)
+4. [Contact](#Contact)
+
+
+
 ## Abstract
 The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Networks (CNNs) pipelines as feature extractors has led to an impressive rise of performance on different computer vision tasks. However many challenges are encountered while dealing with DNNs in the No Reference Image Quality Assessment (NR-IQA) context of which in particular the non uniform distribution of a global quality across the different areas of the the assessed images. We propose a Bi-directional Recurrent Neural Network (RNN) approach that aims to overcome this issue.
 
@@ -6,8 +20,8 @@ The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Netw
   ![](https://github.com/hbrachemi/Bi-RNN-for-IQA/blob/main/BiRCNN.drawio.png)
 
 ## Performance Benchmark
-# Scores comparison on authentic distortions' databases
-*Live in the wild dataset*
+### Scores comparison on authentic distortions' databases
+#### Live in the wild dataset
 
 |Metric| SROCC ↑| PLCC ↑|KRCC ↑|
 |------|:-------------:|:---------------:|:---------------:|
@@ -18,7 +32,7 @@ The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Netw
 |Resnet50| 0.8186 | 0.8361| 0.6341
 |Bi-RCNN(Resnet)| 0.8229 | 0.8514| 0.6357
 
-*Koniq dataset*
+#### Koniq dataset
 
 |Metric| SROCC ↑| PLCC ↑| KRCC ↑|
 |------|:-------------:|:---------------:|:---------------:|
@@ -59,3 +73,7 @@ Then build the feature extractor model.
 5. Define the RNN model
 6. Load y and train the model on the train set.
 
+## Contact 
+Hanene F.Z Brachemi Meftah , `hbrachemi@inttic.dz`
+
+Sid Ahmed Fezza , `sfezza@inttic.dz`
