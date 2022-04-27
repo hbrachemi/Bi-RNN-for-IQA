@@ -1,4 +1,11 @@
 ### On the Use of Bi-RNN for Image Quality Assessment
+## Abstract
+The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Networks (CNNs) pipelines as feature extractors has led to an impressive rise of performance on different computer vision tasks. However many challenges are encountered while dealing with DNNs in the No Reference Image Quality Assessment (NR-IQA) context of which in particular the non uniform distribution of a global quality across the different areas of the the assessed images. We propose a Bi-directional Recurrent Neural Network (RNN) approach that aims to overcome this issue.
+
+
+  ![](https://github.com/hbrachemi/Bi-RNN-for-IQA/blob/main/BiRCNN.drawio.png)
+
+
 
 ## Usage
 The source code is available in the notebook.
