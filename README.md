@@ -20,7 +20,9 @@ The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Netw
   ![](https://github.com/hbrachemi/Bi-RNN-for-IQA/blob/main/BiRCNN.drawio.png)
 
 ## Performance Benchmark
+
 ### Scores comparison on authentic distortions' databases
+
 #### Live in the wild dataset
 
 |Metric| SROCC ↑| PLCC ↑|KRCC ↑|
@@ -42,6 +44,40 @@ The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Netw
 |Bi-RCNN(VGG16)| 0.8223 | 0.8568 | 0.6160
 |Resnet50| 0.8186 | 0.8361| 0.6468
 |Bi-RCNN(Resnet)| 0.8229 | 0.8514| 0.6669
+
+### Scores comparison on synthethic databases
+
+#### Live dataset
+
+|Metric| SROCC ↑| PLCC ↑| KRCC ↑|
+|------|:-------------:|:---------------:|:---------------:|
+|PSNR| 0.8907 | 0.9221 | 0.7236
+|SSIM| 0.8895 | 0.9130 | 0.7239
+|GMSD| 0.9447 | 0.9439 | 0.8086
+|FSIM| 0.9517 | 0.9444 | 0.8260
+|VIF|  0.9017 | 0.9235 | 0.7326
+|BRISQUE| 0.9382 | 0.9475 | 0.7878
+|NIQE| 0.6668 | 0.6440 | 0.4743
+|VGG16| 0.9605 | 0.9646 | 0.8305
+|Bi-RCNN(VGG16)| 0.9826 | 0.9783 | 0.8945
+|Resnet50| 0.9652 | 0.9706 | 0.8418
+|Bi-RCNN(Resnet)| 0.984 | 0.9861 | 0.9036
+
+#### Kadid10k dataset
+
+|Metric| SROCC ↑| PLCC ↑| KRCC ↑|
+|------|:-------------:|:---------------:|:---------------:|
+|PSNR| 0.6910 | 0.6969 | 0.5016
+|SSIM| 0.6796 | 0.6698 | 0.4969
+|GMSD| 0.8467 | 0.8461 | 0.6619
+|FSIM| 0.8353 | 0.8317 | 0.6453
+|VIF|  0.6345 | 0.6360 | 0.4681
+|BRISQUE| 0.6378 | 0.6585 | 0.4695
+|NIQE| 0.3380 | 0.3994 | 0.2279
+|VGG16| 0.9412 | 0.9482 | 0.7884
+|Bi-RCNN(VGG16)| 0.9581 | 0.9595 | 0.8262
+|Resnet50| 0.9385 | 0.9394 | 0.7852
+|Bi-RCNN(Resnet)| 0.9638 | 0.9657 | 0.8369
 
 
 ## Usage
