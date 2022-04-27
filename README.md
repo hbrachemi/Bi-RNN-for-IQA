@@ -5,6 +5,29 @@ The deployment of Deep Neural Networks (DNNs) based on Convolutional Neural Netw
 
   ![](https://github.com/hbrachemi/Bi-RNN-for-IQA/blob/main/BiRCNN.drawio.png)
 
+## Performance Benchmark
+# Scores comparison on authentic distortions' databases
+*Live in the wild dataset*
+
+|Metric| SROCC ↑| PLCC ↑|KRCC ↑|
+|------|:-------------:|:---------------:|:---------------:|
+|BRISQUE| 0.5710 | 0.5954 | 0.4034
+|NIQE| 0.3879 | 0.4274 | 0.2637
+|VGG16| 0.8058 | 0.7996 | 0.6189
+|Bi-RCNN(VGG16)| 0.8223 | 0.8568 | 0.6368
+|Resnet50| 0.8186 | 0.8361| 0.6341
+|Bi-RCNN(Resnet)| 0.8229 | 0.8514| 0.6357
+
+*Koniq dataset*
+
+|Metric| SROCC ↑| PLCC ↑| KRCC ↑|
+|------|:-------------:|:---------------:|:---------------:|
+|BRISQUE| 0.5710 | 0.5954 | 0.4743
+|NIQE| 0.3879 | 0.4274 | 0.0536
+|VGG16| 0.8058 | 0.7996 |0.5906
+|Bi-RCNN(VGG16)| 0.8223 | 0.8568 | 0.6160
+|Resnet50| 0.8186 | 0.8361| 0.6468
+|Bi-RCNN(Resnet)| 0.8229 | 0.8514| 0.6669
 
 
 ## Usage
