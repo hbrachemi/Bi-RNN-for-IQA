@@ -9,7 +9,6 @@
     2.2. [Scores comparison on synthethic datasets](#Scores-comparison-on-synthethic-datasets)
 3. [Model Zoo](#Model-Zoo) 
 4. [Usage](#Usage)
-5. [Contact](#Contact)
 
 
 
@@ -158,8 +157,3 @@ Then build the feature extractor model.
 ```
 5. Define the RNN model
 6. Load y and train the model on the train set.
-
-## Contact 
-Hanene F.Z Brachemi Meftah , `hbrachemi@inttic.dz`
-
-Sid Ahmed Fezza , `sfezza@inttic.dz`
